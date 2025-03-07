@@ -119,8 +119,6 @@ async function main(){
         receiver: "John",
         date: Date.now()
     },
-    
-    
     ];
     chat.insertMany(chats)
     .then(result => {
