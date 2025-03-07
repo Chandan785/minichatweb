@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Massage</title>
+</head>
+<body>
+    <h4>Edit your Message: <%= chatFound._id %></h4>
+    <p>This message was sent by <b><%= chatFound.sender %></b> to <b><%= chatFound.receiver %></p></b> 
+    
+<form method="post" action="/chats/<%= chatFound._id %>?_method=PUT">
+    <textarea name="message" id="message" cols="30" rows="5" required><%= chatFound.message %></textarea>
+    <br>
+    <button>Update</button>
+    <button> <a href="/chats">Back</a></button>
+    
+</form>
+</body>
+</html>
