@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: hwb(0 95% 5%);
+}
+.chat{
+    background-color: #bebdbd;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.msg{
+    background-color: rgb(8, 86, 233);
+    color: white;
+    padding: 5px;
+    width: 200px;
+}
+
+.Newchat{
+    background-color: #478e5a;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.deletechat{
+    background-color: rgb(147, 20, 37);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.editchat{
+    background-color: #b4a04d;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.chatbuttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
