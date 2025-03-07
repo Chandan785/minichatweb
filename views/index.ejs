@@ -6,7 +6,7 @@
     <title>mini chat application</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body>  
    
     <h2>All Chats</h2>
     <form method="get" action="/chats/new">
@@ -20,16 +20,18 @@
             
             <div class="msg">
                 <p>Message: <%= chat.message %></p>
-                <div class="chatbuttons">
-                    <form method="get" action="/chats/<%= chat._id %>">
-                        <button class="editchat">edit</button>
-                    </form>
-                    <br><br>
-                    <form method="post" action="/chats/<%= chat._id %>?_method=DELETE"> 
-              
-                        <button class="deletechat">delete</button>
-                </div>
-                </div>
+               <div class="chatbuttons">
+                <form method="get" action="/chats/<%= chat._id %>">
+                    <button class="editchat">edit</button>
+                </form>
+                <br><br>
+                <form method="post" action="/chats/<%= chat._id %>?_method=DELETE"> 
+          
+                    <button class="deletechat">delete</button>
+             
+            </div>
+               </div>
+                    
               
             <hr>
             <p><%= chat.date.toString().split(" ")[4] %></p>

@@ -38,7 +38,7 @@ async function main(){
     });
 
     //edit route
-    app.get('/chats/:id/edit', async (req, res) => {
+    app.get('/chats/:id', async (req, res) => {
         let chatId = req.params.id;
         let chatFound = await chat.findById(chatId);
         res.render('edit.ejs', {chatFound});

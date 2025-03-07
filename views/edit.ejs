@@ -6,7 +6,7 @@
     <title>Edit Massage</title>
 </head>
 <body>
-    <h4>Edit your Message: <%= chatFound._id %></h4>
+    <h4>your Message Id: <%= chatFound._id %></h4>
     <p>This message was sent by <b><%= chatFound.sender %></b> to <b><%= chatFound.receiver %></p></b> 
     
 <form method="post" action="/chats/<%= chatFound._id %>?_method=PUT">
