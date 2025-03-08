@@ -77,7 +77,7 @@ app.delete('/chats/:id', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('I am listening'); 
+    res.redirect('/chats'); 
 });
 
 app.listen(port, () => {
